@@ -35,3 +35,18 @@ function createPerson(name, age) {
 const person = createPerson("Hulk", 46);
 console.log(person.getName());
 console.log(person.getAge());
+
+// CLOSURE EXAMPLE
+function outer() {
+  const val = "outer Val";
+
+  function inner(...args) {
+    console.log(args);
+    console.log(val);
+  }
+
+  return inner;
+}
+
+const func = outer();
+func("hello");
