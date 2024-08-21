@@ -24,3 +24,9 @@ car1.startEngine();
 car2.startEngine();
 car1.stopEngine();
 car2.stopEngine();
+
+// THIS KEYWORD
+// THIS -> global context -> global object i.e window IN WEB BROWSET
+//  ARROW FUNC CANNOT HAVE THIS KEYWORD. THEY GET THE BINDING FROM THE SURROUNDING CONTEXT
+//  IN CASE OG OBJ -. THIS REFERS THE THE OBJECT
+console.log(this);

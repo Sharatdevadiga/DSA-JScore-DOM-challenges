@@ -42,7 +42,9 @@ nums.splice(2, 2, "9", "9");
 nums;
 
 const slice = nums.slice(0, 3);
+const slice2 = nums.slice(-2);
 slice;
+slice2;
 
 const concat = [1, 2, 3, 4].concat(nums);
 concat;
