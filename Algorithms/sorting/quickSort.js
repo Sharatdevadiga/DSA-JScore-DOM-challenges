@@ -1,6 +1,7 @@
 function quickSort(arr, low = 0, high = arr.length - 1) {
   if (low < high) {
     let pivotIdx = partition(arr, low, high);
+    console.log(pivotIdx, arr);
     quickSort(arr, low, pivotIdx - 1);
     quickSort(arr, pivotIdx + 1, high);
   }
@@ -22,5 +23,5 @@ function partition(arr, low, high) {
   return ptr;
 }
 
-let arr = [1, 4, 2, 3, 6, 5, 8, 7, 9];
+let arr = [7, 10, 4, 3, 5];
 console.log(quickSort(arr));
